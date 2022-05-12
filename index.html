@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Frank Pepes: Survey Form</h1>
+        <p id="description">Pizzeria Napolitana since 1925</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" placeholder="Enter your name" id="name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Insert your email" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age(Optional)</label>
+                <input type="number" id="number" min="10" max="99" placeholder="Inser your age">
+
+            </div>
+            <div>
+                <label for="dropdown">Wich pizza of our prefactory is your favorite?</label>
+                <select name="" id="dropdown" placeholder="Choose one pizza">
+                    <option value="--">Choose one</option>
+                    <option value="SMG">Spinash/mushorms/gorgonzola</option>
+                    <option value="WC">White Clam</option>
+                    <option value="MR">Meatball and Ricotta</option>
+                    <option value="VE">Veggie Especial</option>
+                    <option value="ADC">Amanti della carne</option>
+                    <option value="MG">Marguerita</option>
+                </select>
+            </div>
+            <p>Which size do you usually pick?
+            <p>
+
+            <div>
+                <label for="small" class="p">
+                    <input type="radio" class="check-input" name="name" value="small" id="small">
+                    Small
+                </label>
+
+
+                <label for="medium" class="p">
+                    <input type="radio" class="check-input" name="name" value="medium" id="medium">
+                    Medium
+                </label>
+
+
+                <label for="large" class="p">
+                    <input type="radio" class="check-input" name="name" value="large" id="large">
+                    Large</label>
+            </div>
+
+
+            <p>Which ones did you alredy visit?
+            <p>
+            <div>
+
+                <label for="new-heaven" class="p">
+                    <input type="checkbox" class="check-input" name="check" value="new-heaven" id="new-heaven">
+                    New Heaven
+                </label>
+
+
+                <label for="mohegan-sun" class="p">
+                    <input type="checkbox" class="check-input" name="check" value="mohegan-sun" id="mohegan-sun">
+                    Mohegan Sun
+                </label>
+
+                <label for="washintong" class="p">
+                    <input type="checkbox" class="check-input" name="check" value="washintong" id="washintong">
+                    Washintong DC
+                </label>
+            </div>
+            <div>
+                <label for="textarea">Addicional coments</label>
+                <textarea name="textarea" id="textarea"></textarea>
+            </div>
+            <button id="submit">Send Form</button>
+        </form>
+    </main>
+</body>
+
+</html>
